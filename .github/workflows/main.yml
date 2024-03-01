@@ -49,6 +49,7 @@ jobs:
 
 
     BUILD_AND_PUBLISH_DOCKER_IMAGE:
+        needs: Testing
         runs-on: ubuntu-latest
         steps:
             - name: Code Checkout
